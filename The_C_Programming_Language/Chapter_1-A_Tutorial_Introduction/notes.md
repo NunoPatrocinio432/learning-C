@@ -69,6 +69,11 @@
 
   -  Symbolic constant names are conventionally written in upper case so they can ber readily distinguished from lower case variable names. Notice that there is no semicolon at the end of a #define line.
 
+  ## 1.5 Character Input and Output
+  - he standard library provides several functions for reading or writing one character at a time, of which getchar and putchar are the simplest. Each time it is called, getchar reads the next input character from a text stream and returns that as its value.
+
+  - The function putchar prints a character each time it is called. 
+
 
 
 
