@@ -64,6 +64,11 @@
 
   - The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops in which the initialization and increment are single statements and logically related, since it is more compact than while and it keeps the loop control statements together in one place.
 
+  ## 1.4 Symbolic Constants
+  - A #define line defines a symbolic name or symbolic constant to be a particular string of characters.
+
+  -  Symbolic constant names are conventionally written in upper case so they can ber readily distinguished from lower case variable names. Notice that there is no semicolon at the end of a #define line.
+
 
 
 
