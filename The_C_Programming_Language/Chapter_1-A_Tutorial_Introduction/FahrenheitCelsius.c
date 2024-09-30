@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/*Exercise 1-3. Modify the temperature conversion program to 
+print a heading above the table. */
+
 /* Print Fahrenheit-Celsius table for fahr = 0, 20, ..., 300; floating-point version */
 int main() {
     float fahr, celsius;

@@ -59,5 +59,11 @@
         - %% -> Itself  
 
 
+## 1.3 - The for statement
+  - The for statement is a loop, a generalization of the while.If you compare it to the earlier while, its operation should be clear. 
+
+  - The choice between while and for is arbitrary, based on which seems clearer. The for is usually appropriate for loops in which the initialization and increment are single statements and logically related, since it is more compact than while and it keeps the loop control statements together in one place.
+
+
 
 
