@@ -85,6 +85,15 @@
 
   - The parentheses around the assignment, within the condition are necessary. The precedence of != is higher than that of =, which means that in the absence of parentheses the relational test != would be done before the assignment =. So the statement c = getchar() != EOF is equivalent to c = (getchar() != EOF). This has the undesired effect of setting c to 0 or 1, depending on whether or not the call of getchar returned end of file.
 
+  ### 1.5.2 Character Counting
+  - ++ -> increment by one.
+  
+  - -- -> decrement by 1.
+
+  - The grammatical rules of C require that a for statement have a body. The isolated semicolon, called a null statement, is there to satisfy that requirement.
+
+  - One of the nice things about while and for is that they test at the top of the loop, before proceeding with the body. If there is nothing to do, nothing is done, even if that means never going through the loop body. Programs should act intelligently when given zero-length input. The while and for statements help ensure that programs do reasonable things with boundary conditions.
+
 
 
 
