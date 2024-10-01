@@ -70,9 +70,22 @@
   -  Symbolic constant names are conventionally written in upper case so they can ber readily distinguished from lower case variable names. Notice that there is no semicolon at the end of a #define line.
 
   ## 1.5 Character Input and Output
-  - he standard library provides several functions for reading or writing one character at a time, of which getchar and putchar are the simplest. Each time it is called, getchar reads the next input character from a text stream and returns that as its value.
+  - The standard library provides several functions for reading or writing one character at a time, of which getchar and putchar are the simplest. Each time it is called, getchar reads the next input character from a text stream and returns that as its value.
 
-  - The function putchar prints a character each time it is called. 
+  - The function putchar prints a character each time it is called.
+  
+  ### 1.5.1 File Copying
+  - Given getchar and putchar, you can write a surprising amount of useful code without knowing anything more about input and output.
+
+  - EOF - End of File
+
+  - The type char is specifically meant for storing such character data, but any integer type can be used. We used int for a subtle but important reason.
+
+  - EOF is an integer defined in <stdio.h>, but the specific numeric value doesn't matter as long as it is not the same as any char value. By using the symbolic constant, we are assured that nothing in the program depends on the specific numeric value.
+
+  - The parentheses around the assignment, within the condition are necessary. The precedence of != is higher than that of =, which means that in the absence of parentheses the relational test != would be done before the assignment =. So the statement c = getchar() != EOF is equivalent to c = (getchar() != EOF). This has the undesired effect of setting c to 0 or 1, depending on whether or not the call of getchar returned end of file.
+
+
 
 
 
